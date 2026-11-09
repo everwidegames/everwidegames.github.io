@@ -1,0 +1,59 @@
+:root {
+  --bg: #fff6ec;
+  --card: #fffaf4;
+  --card2: #f0e2d2;
+  --ink: #2e1e1a;
+  --dim: #6e5246;
+  --accent: #c86846;
+  --purple: #b078f0;
+  --green: #56c878;
+  --blue: #54aaf0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #241a2c;
+    --card: #362a40;
+    --card2: #463752;
+    --ink: #f6f0fa;
+    --dim: #ccc2dc;
+    --accent: #c08ce8;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 17px/1.6 "Baloo 2", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+a { color: var(--accent); }
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+header.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.logo { display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); }
+.logo svg { width: 40px; height: 40px; flex: none; }
+.logo b { font-size: 22px; font-weight: 800; letter-spacing: .5px; }
+.logo span { color: var(--accent); }
+nav a { margin-left: 14px; font-weight: 600; text-decoration: none; }
+.card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 22px;
+  margin-top: 20px;
+  box-shadow: 0 4px 0 var(--card2);
+}
+.game { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+.game img { width: 96px; height: 96px; border-radius: 22px; flex: none; }
+.game h2 { margin: 0; font-size: 26px; line-height: 1.2; }
+.game p { margin: 6px 0 0; color: var(--dim); }
+.banner { width: 100%; height: auto; border-radius: 16px; display: block; margin-top: 16px; }
+.pill {
+  display: inline-block; margin-top: 10px; padding: 6px 14px; border-radius: 999px;
+  background: var(--card2); color: var(--ink); font-weight: 700; font-size: 15px;
+}
+h1 { font-size: 30px; line-height: 1.2; margin: 28px 0 4px; }
+h3 { margin: 22px 0 4px; font-size: 19px; }
+.muted { color: var(--dim); }
+.lang a { font-weight: 700; margin-right: 12px; }
+footer { margin-top: 36px; color: var(--dim); font-size: 15px; text-align: center; }
+ul { padding-left: 22px; }
